@@ -16,9 +16,6 @@ export default class TestComponent extends React.Component{
         return (<>
             <Button onClick={ashakExtends(this.shakHandle,1000)} type="primary">防抖</Button>
             <Button onClick={throttleExtends(this.throttleHandle,1000)} type="primary">节流</Button>
-            <Link to="/">
-                <span>aaaaaaaa</span>
-            </Link>
         </>);
     }
     constructor(){
