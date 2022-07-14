@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 25px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#root{
+    font-size:14px;
+}
+
+.App{
+    width:100vw;
+    height:100vh;
+    background: url(../images/bg.webp) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+/* ============================菜单布局 start */
+.menus-box-class{
+    width:200px;
+    height:100vh;
+}
+/* ============================菜单布局 start */
+
+/* ============================内容框架布局 start */
+.content-main-box-class{
+    height:100vh;
+}
+/* ============================内容框架布局 start */
+
+/* ============================头部框架布局 start */
+.header-box-class{
+    width:100%;
+    height:50px;
+    padding:0 10px;
+}
+/* ============================头部框架布局 end */
+
+
+/* ============================内容盒子框架布局 start */
+.content-core-main-class{
+    width:100%;
+    height:calc(100% - 104px);
+    padding:10px;
+    background:#f7f7f7;
+}
+/* ============================内容盒子框架布局 end */
+
+
+/* ============================底部框架布局 start */
+.footer-box-class{
+    width:100%;
+    height:50px;
+    padding:0 10px;
+}
+/* ============================底部框架布局 end */
+
+
+
+
+/* ============================flex布局 start */
+.flex{
+    display: flex;
+}
+
+.justify-center{
+    justify-content:center;
+}
+
+.justify-start{
+    justify-content:flex-start;
+}
+
+.justify-end{
+    justify-content:flex-end;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.align-start{
+    align-items: flex-start;
+}
+
+.align-end{
+    align-items:flex-end;
+}
+
+.flex-0-0{
+    flex:0 0 auto;
+}
+
+.flex-1-1{
+    flex:1 1 auto;
+}
+/* ============================flex布局 end */
+
+/* ============================分割线布局 start */
+.line-x{
+    height:0px;
+    width:100%;
+    overflow: hidden;
+    border-bottom:1px solid rgba(226ß, 226, 226, 0.381);
+    border-top:1px solid rgba(239, 239, 239, 0.412);
+}
+.line-y{
+    width:0px;
+    height:100%;
+    overflow: hidden;
+    border-right:1px solid rgba(226, 226, 226, 0.381);
+    border-left:1px solid rgba(239, 239, 239, 0.412);
+}
+/* ============================分割线布局 end */
+
