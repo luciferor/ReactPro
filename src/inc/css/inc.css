@@ -106,12 +106,45 @@
 .login-form-box-class{
     width:800px;
     height:500px;
-    background: rgba(8, 8, 8, 0.2) url(../images/eimap.png) no-repeat center center;
-    backdrop-filter: blur(30px);
+    background: url(../images/eimap.png) no-repeat center center;
+    /* backdrop-filter: blur(30px); */
     border-radius: 30px;
     overflow: hidden;
     padding:30px;
     /* box-shadow: 0px 0px 10px 10px rgba(17, 255, 0, 0.476); */
+}
+
+.login-form-item-class{
+    width:100%;
+    padding:15px 200px;
+    color:#c7c7c7;
+}
+
+.ant-input-affix-wrapper{
+    background: transparent !important;
+    backdrop-filter: blur(30px) !important;
+    border-radius: 20px !important;
+    border-color: transparent !important
+}
+
+.ant-input{
+    background: transparent !important;
+    backdrop-filter: blur(30px) !important;
+    color:white !important;
+}
+
+.ant-input-prefix{
+    color:white !important;
+}
+
+.ant-input-password-icon.anticon{
+    color:white !important;
+}
+
+.ant-btn-primary{
+    background: transparent !important;
+    backdrop-filter: blur(30px);
+    border-color: transparent !important;
 }
 /* ============================登录页面样式布局 end */
 
