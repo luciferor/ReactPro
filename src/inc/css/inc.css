@@ -19,7 +19,8 @@
 .App{
     width:100vw;
     height:100vh;
-    background: url(../images/bg.webp) no-repeat center center;
+    /* background: url(../images/bg.webp) no-repeat center center; */
+    background:#f7f7f7;
     background-size: 100% 100%;
 }
 
@@ -27,12 +28,28 @@
 .menus-box-class{
     width:200px;
     height:100vh;
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    transition:.5s all ease;
+}
+
+.hm{
+    position:fixed;
+    left:-300px;
 }
 /* ============================菜单布局 start */
 
 /* ============================内容框架布局 start */
 .content-main-box-class{
+    width:100vw;
     height:100vh;
+    transition:.5s all ease;
+}
+
+.chm{
+    width:calc(100vw - 200px);
 }
 /* ============================内容框架布局 start */
 
@@ -62,6 +79,41 @@
     padding:0 10px;
 }
 /* ============================底部框架布局 end */
+
+
+/* ============================登录页面样式布局 end */
+.login-main-box-class{
+    width:100vw;
+    height:100vh;
+    position:relative;
+}
+
+.mp4-box-class{
+    width:100%;
+    height:100%;
+    inset:0;
+    position:absolute;
+    object-fit: cover;
+}
+
+.login-core-box-class{
+    width:100%;
+    height:100%;
+    position:absolute;
+    inset:0;
+}
+
+.login-form-box-class{
+    width:800px;
+    height:500px;
+    background: rgba(8, 8, 8, 0.2) url(../images/eimap.png) no-repeat center center;
+    backdrop-filter: blur(30px);
+    border-radius: 30px;
+    overflow: hidden;
+    padding:30px;
+    /* box-shadow: 0px 0px 10px 10px rgba(17, 255, 0, 0.476); */
+}
+/* ============================登录页面样式布局 end */
 
 
 
@@ -99,6 +151,10 @@
     align-items:flex-end;
 }
 
+.flex-direction{
+    flex-direction:column;
+}
+
 .flex-0-0{
     flex:0 0 auto;
 }
@@ -113,15 +169,15 @@
     height:0px;
     width:100%;
     overflow: hidden;
-    border-bottom:1px solid rgba(226ß, 226, 226, 0.381);
-    border-top:1px solid rgba(239, 239, 239, 0.412);
+    border-bottom:1px solid rgba(255, 255, 255, 0.8);
+    border-top:1px solid rgba(239, 239, 239, 0.8);
 }
 .line-y{
     width:0px;
     height:100%;
     overflow: hidden;
-    border-right:1px solid rgba(226, 226, 226, 0.381);
-    border-left:1px solid rgba(239, 239, 239, 0.412);
+    border-right:1px solid rgba(255, 255, 255, 0.8);
+    border-left:1px solid rgba(239, 239, 239, 0.8);
 }
 /* ============================分割线布局 end */
 
