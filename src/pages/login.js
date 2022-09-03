@@ -3,8 +3,13 @@ import logo from '../inc/images/logo.png';
 import mp4 from '../inc/images/934158dc-d12e-433c-9fce-a8e68cc8e91b51541279.mp4';
 import { UserOutlined,SisternodeOutlined,LockOutlined } from '@ant-design/icons';
 import { Input,Switch,Button } from 'antd';
+import {HashRouter as Router , Route } from 'react-router-dom'
+import { createBrowserHistory } from "history";
 
 export default class Login extends React.Component{
+    loginHandle = ()=>{
+        this.props.history.replace('/');
+    }
     render(){
         return(
             <div className="login-main-box-class">
@@ -22,7 +27,7 @@ export default class Login extends React.Component{
                             </div>
                             <div className="login-form-item-class flex justify-end align-center">
                                 <Switch defaultChecked style={{marginRight:'10px'}} />
-                                <Button size="large" type="primary" shape="round" icon={<SisternodeOutlined />}>立即登录</Button>
+                                <Button onClick={this.loginHandle} size="large" type="primary" shape="round" icon={<SisternodeOutlined />}>立即登录</Button>
                             </div>
                             <div className="login-form-item-class flex justify-center align-center">
                                 Copyright &copy; &nbsp;<a href="http://www.dsnbc.com" target="_blank">Dias Software Inc.</a>
