@@ -5,4 +5,8 @@ export default class Index extends React.Component{
             <div>Home</div>
         )
     }
+
+    shouldComponentUpdate() {
+        return false;
+    }
 }

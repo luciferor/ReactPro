@@ -1,19 +1,25 @@
 import React from 'react';
 import logo from '../inc/images/logo.png';
-import mp4 from '../inc/images/934158dc-d12e-433c-9fce-a8e68cc8e91b51541279.mp4';
+// import mp4 from '../inc/images/934158dc-d12e-433c-9fce-a8e68cc8e91b51541279.mp4';
 import { UserOutlined,SisternodeOutlined,LockOutlined } from '@ant-design/icons';
 import { Input,Switch,Button } from 'antd';
 import {HashRouter as Router , Route } from 'react-router-dom'
 import { createBrowserHistory } from "history";
+import cookie from 'react-cookies';
+const routers = createBrowserHistory();
 
 export default class Login extends React.Component{
     loginHandle = ()=>{
-        this.props.history.replace('/');
+        routers.replace('/');
+        window.location.reload();
+        cookie.save('token','aaaaaaaaaa');//设置token
+        console.log(this.props)
+        // this.props.history.replace('/');
     }
     render(){
         return(
             <div className="login-main-box-class">
-                <video className="mp4-box-class" autoPlay="autoplay" loop={true} muted={true} src={mp4}></video>
+                {/* <video className="mp4-box-class" autoPlay="autoplay" loop={true} muted={true} src={mp4}></video> */}
                 <div className="login-core-box-class flex justify-center align-center flex-direction">
                     <div className="login-form-box-class">
                         <div className="flex justify-center align-center flex-direction">
@@ -40,6 +46,8 @@ export default class Login extends React.Component{
     }
 
     componentDidMount(){
-        
+        console.log(this.props,'AAAAAAAAAAAAAAAAAAA')
     }
 }
+
+// export default withRouter(Login);
